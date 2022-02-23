@@ -1,0 +1,37 @@
+#program t ok find max and min values in list 
+sgl=[]
+n=int(input("enter n"))
+for i in range(n):
+    v=int(input())
+    sgl.append(v)
+min=sgl[0]
+max=sgl[0]
+for i in range(1,n):
+    if sgl[i]>max:
+     max=sgl[i]
+print('maximum value in list is:',max)
+for i in range(1,n):
+    if sgl[i]<min:
+        min=sgl[i]
+print('minimum value in the list is:',min)
+    
+Output:
+enter n
+
+6 
+
+2 
+
+890 
+
+-7890 
+
+0 
+
+743 
+
+-34 
+
+maximum value in list is: 890
+minimum value in the list is: -7890
+
